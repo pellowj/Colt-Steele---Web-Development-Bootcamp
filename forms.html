@@ -9,9 +9,29 @@
 <body>
     <h1>Login</h1>
     <form action="http://www.wikipedia.org">
-        <input name="username" type="text" placeholder="username">
-        <input name="password" type="password" placeholder="password">
+
+        <lable>
+            Username: 
+            <input name="username" type="text" placeholder="username">
+        </lable>
+        <label>
+            Password:
+            <input name="password" type="password" placeholder="password">
+        </label>
+        
         <input type="submit">
     </form>
+
+
+    <form action="http://www.wikipedia.org">
+        
+                <lable for="username">Username:</lable>
+                <input id="username" type="text" placeholder="username">
+
+                <label for="password">Password:</label>
+                <input id="password" type="password" placeholder="password">
+                
+                <input type="submit">
+            </form>
 </body>
 </html>
