@@ -1,6 +1,18 @@
-var firstName = prompt("What is your first name?  ");
-var lastName = prompt("What is your last name?  ");
-var age = prompt("What is your age?  ");
+var todos = ["Buy new Turtle"];
 
-console.log("Your full name is " + firstName + " " + lastName);
-console.log("Your are " + age + " years old");
+var input = prompt("What would you like to you?");
+
+while (input !== "quit") {
+    // handle input
+    if (input === "list") {
+        console.log(todos);
+    } else if(input === "new") {
+        // ask for new todo
+        var newTodo = prompt("Enter new todo");
+        // add to todo array
+        todos.push(newTodo);
+    }
+    // ask again for new input
+    input = prompt("What would you like to you?");
+} 
+console.log("Ok, You quit the app");
