@@ -1,6 +1,6 @@
 var todos = ["Buy new Turtle"];
 
-var input = prompt("What would you like to you?");
+var input = prompt("What would you like to do?");
 
 while (input !== "quit") {
     // handle input
@@ -12,7 +12,7 @@ while (input !== "quit") {
         deleteTodo;
     }
     // ask again for new input
-    input = prompt("What would you like to you?");
+    input = prompt("What would you like to do?");
 } 
 console.log("Ok, You quit the app");
 
